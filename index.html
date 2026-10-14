@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="AQ Computer One Stop Supply Sdn Bhd — kedai online aksesori komputer dan telefon, komponen, upgrade dan servis pembaikan. WhatsApp 017-756 5610.">
+<meta name="theme-color" content="#1D4ED8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20width%3D%2264%22%20height%3D%2264%22%3E%0A%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231D4ED8%22%2F%3E%0A%3Ccircle%20cx%3D%2231%22%20cy%3D%2230%22%20r%3D%2219%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225.5%22%2F%3E%0A%3Cpath%20d%3D%22M43.5%2042.5%20L53%2052%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%225.5%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M22%2037%20L30%2018.5%20L38%2037%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%224.5%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M25.5%2031%20H34.5%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%224.5%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E">
+<title>AQ Computer One Stop Supply</title>
+<style>:root{color-scheme:light} img{max-width:100%} [hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<style>
+/* Layout: conventional small-business site, deliberately light-only. Header with logo + nav → hero (headline + contact card) → products → repair services + 5 steps → about (company details + why us) → contact (details, platform links, enquiry form) → footer. Floating WhatsApp button. */
+:root{
+  --bg:#FFFFFF;
+  --bg-2:#F4F6F9;
+  --ink:#111827;
+  --muted:#5B6473;
+  --line:#E3E7ED;
+  --line-strong:#C7CED8;
+  --accent:#1D4ED8;
+  --accent-hover:#1E40AF;
+  --accent-ink:#FFFFFF;
+  --tint:#EAF0FF;
+  --wa:#128C7E;
+  --wa-hover:#0F766E;
+  --wa-ink:#FFFFFF;
+  --shadow:0 6px 24px rgba(17,24,39,.08);
+  --font-display:"Plus Jakarta Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  --font-body:"DM Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:76px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:var(--font-display);line-height:1.2;letter-spacing:-.015em;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:16px}
+@media (min-width:720px){.wrap{padding-inline:24px}}
+.section{padding-block:48px}
+@media (min-width:880px){.section{padding-block:72px}}
+.section.alt{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section .wrap{display:grid;gap:28px}
+.shead{display:grid;gap:8px;max-width:640px}
+.shead h2{font-size:clamp(26px,4.5vw,34px);font-weight:800}
+.shead p{color:var(--muted);font-size:17px}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:8px;font-family:var(--font-display);font-weight:700;font-size:15px;line-height:1.2;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .15s ease}
+.btn .ic{width:19px;height:19px}
+.btn-wa{background:var(--wa);color:var(--wa-ink)}
+.btn-wa:hover{background:var(--wa-hover)}
+.btn-line{background:var(--bg);color:var(--ink);border-color:var(--line-strong)}
+.btn-line:hover{background:var(--bg-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* Header */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:12px;min-height:64px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;margin-right:auto}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{display:block;font-family:var(--font-display);font-size:18px;font-weight:800;line-height:1.1;white-space:nowrap;color:#0F1E3D}
+.brand span{display:block;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:nowrap}
+.nav{display:none;align-items:center;gap:24px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.lang{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--bg-2);flex:none}
+.lang button{font-size:12px;font-weight:700;border:0;background:transparent;color:var(--muted);padding:5px 9px;border-radius:999px;cursor:pointer;line-height:1.2}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.topbar .btn{display:none;min-height:40px;padding:0 16px;font-size:14px}
+.menubtn{width:42px;height:42px;border-radius:8px;border:1px solid var(--line);background:transparent;display:grid;place-items:center;cursor:pointer;flex:none}
+.mnav{flex-basis:100%;display:grid;padding-bottom:12px;border-top:1px solid var(--line);margin-top:4px}
+.mnav a{padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+.mnav .btn{display:inline-flex;margin-top:12px;justify-self:start}
+@media (min-width:960px){.nav{display:flex}.topbar .btn{display:inline-flex}.menubtn{display:none}.mnav{display:none!important}}
+
+/* Hero */
+.hero{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;gap:28px;padding-block:40px 48px}
+@media (min-width:880px){.hero .wrap{grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:48px;align-items:center;padding-block:64px 72px}}
+.hero-copy{display:grid;gap:18px;justify-items:start;min-width:0}
+.hero h1{font-size:clamp(30px,6vw,46px);font-weight:800}
+.hero-lead{font-size:17px;color:var(--muted);max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.infocard{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:12px;box-shadow:var(--shadow);min-width:0}
+.infocard h2{font-size:17px;font-weight:800;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.info{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:start;font-size:15px}
+.info .ic{color:var(--accent);width:20px;height:20px;margin-top:3px}
+.info .lbl{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.info .val{font-weight:600;overflow-wrap:anywhere}
+.info a.val{color:var(--accent);text-decoration:none}
+.hours{display:grid;gap:2px}
+.hours div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}
+.hours span:last-child{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;white-space:nowrap}
+
+/* Cards */
+.cards{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:600px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:960px){.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:8px;align-content:start;min-width:0}
+.card .icbox{width:42px;height:42px;border-radius:10px;background:var(--tint);color:var(--accent);display:grid;place-items:center}
+.card h3{font-size:17px;font-weight:700}
+.card p{font-size:14.5px;color:var(--muted)}
+.note{color:var(--muted);font-size:15px}
+.note a{color:var(--accent);font-weight:600}
+
+/* Repair */
+.two{display:grid;gap:16px}
+@media (min-width:880px){.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+.list{list-style:none;margin:0;padding:0;display:grid}
+.list li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.list li:last-child{border-bottom:0}
+.list .ic{width:18px;height:18px;color:var(--accent);margin-top:4px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:step}
+@media (min-width:880px){.steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;align-items:start;min-width:0}
+@media (min-width:880px){.steps li{grid-template-columns:1fr;gap:8px}}
+.steps li::before{counter-increment:step;content:counter(step);width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:14px}
+.steps h3{font-size:15.5px;font-weight:700}
+.steps p{font-size:14px;color:var(--muted);margin-top:2px}
+.sub-h{font-size:19px;font-weight:800;margin-bottom:14px}
+
+/* About */
+.about{display:grid;gap:20px}
+@media (min-width:880px){.about{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px;align-items:start}}
+.about-text{display:grid;gap:12px;font-size:16px;color:var(--muted)}
+.about-text p:first-child{color:var(--ink)}
+.facts{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:6px 20px;display:grid}
+.facts div{display:grid;grid-template-columns:minmax(110px,40%) minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.facts div:last-child{border-bottom:0}
+.facts dt{color:var(--muted);font-weight:600;margin:0}
+.facts dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.why{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:600px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:960px){.why{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.why div{display:grid;gap:4px;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.why b{font-family:var(--font-display);font-size:16px}
+.why small{font-size:14px;color:var(--muted)}
+
+/* Contact */
+.contact{display:grid;gap:20px}
+@media (min-width:880px){.contact{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}}
+.details{display:grid;gap:14px;align-content:start}
+.details .info{font-size:16px}
+.copy{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--accent);background:var(--tint);border:0;border-radius:6px;padding:4px 8px;cursor:pointer;margin-left:8px;vertical-align:middle}
+.copy .ic{width:13px;height:13px;color:inherit}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.links a{display:inline-flex;align-items:center;min-height:38px;padding:0 14px;border:1px solid var(--line-strong);border-radius:8px;background:var(--bg);text-decoration:none;font-weight:600;font-size:14px}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.form{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px;min-width:0;margin:0}
+@media (min-width:720px){.form{padding:24px}}
+.form h3{font-size:19px;font-weight:800}
+.form .lead{font-size:14.5px;color:var(--muted);margin-top:4px}
+.field{display:grid;gap:5px;min-width:0}
+.field label{font-size:13px;font-weight:700;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--bg-2);border:1px solid var(--line-strong);border-radius:8px;padding:10px 12px;min-width:0}
+.field textarea{min-height:90px;resize:vertical}
+.field ::placeholder{color:var(--muted);opacity:.75}
+.frow{display:grid;gap:14px}
+@media (min-width:520px){.frow{grid-template-columns:1fr 1fr}}
+.form .btn{width:100%}
+.fnote{font-size:13px;color:var(--muted)}
+
+/* Footer */
+.foot{padding-block:28px 36px;color:var(--muted);font-size:14px;line-height:1.7;border-top:1px solid var(--line);background:var(--bg-2)}
+@media (max-width:719.98px){.foot{padding-bottom:88px}}
+.foot .wrap{display:grid;gap:16px}
+@media (min-width:720px){.foot .wrap{grid-template-columns:minmax(0,1fr) auto;align-items:start}}
+.foot .brand{margin:0 0 6px}
+.foot strong{color:var(--ink);font-family:var(--font-display)}
+.foot-nav{display:grid;gap:6px}
+.foot-nav a{color:var(--muted);text-decoration:none}
+.foot-nav a:hover{color:var(--ink)}
+
+/* Floating WhatsApp + toast */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:31;display:inline-flex;align-items:center;gap:8px;padding:0 18px 0 14px;min-height:50px;border-radius:999px;background:var(--wa);color:var(--wa-ink);font-family:var(--font-display);font-weight:700;font-size:15px;text-decoration:none;box-shadow:var(--shadow)}
+.fab .ic{width:24px;height:24px}
+@media (min-width:720px){.fab{right:24px;bottom:24px}}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;z-index:40;box-shadow:var(--shadow);white-space:nowrap}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1D4ED8"/><circle cx="31" cy="30" r="19" fill="none" stroke="#FFFFFF" stroke-width="5.5"/><path d="M43.5 42.5 L53 52" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/><path d="M22 37 L30 18.5 L38 37" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M25.5 31 H34.5" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M4 10h3M4 14h3M17 10h3M17 14h3M10 4v3M14 4v3M10 17v3M14 17v3"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a16 16 0 0 1 20 0"/><path d="M5.5 12.5a11 11 0 0 1 13 0"/><path d="M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></symbol>
+  <symbol id="i-drive" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 14h18"/><circle cx="7" cy="17" r="1"/><circle cx="7" cy="9" r="1"/></symbol>
+  <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h.01M18 14h.01M9 14h6"/></symbol>
+</svg>
+
+<header class="topbar" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="AQ Computer One Stop Supply">
+      <svg aria-hidden="true"><use href="#logo"/></svg>
+      <span><b>AQ Computer</b><span>One Stop Supply</span></span>
+    </a>
+    <nav class="nav" aria-label="Bahagian">
+      <a href="#products" data-i18n="nav.products">Produk</a>
+      <a href="#repair" data-i18n="nav.repair">Servis baiki</a>
+      <a href="#about" data-i18n="nav.about">Tentang kami</a>
+      <a href="#contact" data-i18n="nav.contact">Hubungi</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Bahasa / Language">
+      <button type="button" data-lang="ms" aria-pressed="true">BM</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-wa js-wa" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="cta.wa">WhatsApp kami</span></a>
+    <button class="menubtn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <nav class="mnav" id="mnav" hidden aria-label="Menu">
+      <a href="#products" data-i18n="nav.products">Produk</a>
+      <a href="#repair" data-i18n="nav.repair">Servis baiki</a>
+      <a href="#about" data-i18n="nav.about">Tentang kami</a>
+      <a href="#contact" data-i18n="nav.contact">Hubungi</a>
+      <a class="btn btn-wa js-wa" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="cta.wa">WhatsApp kami</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1 data-i18n="hero.h1">Kedai komputer &amp; telefon online: aksesori, komponen dan servis baiki</h1>
+      <p class="hero-lead" data-i18n="hero.lead">AQ Computer One Stop Supply Sdn Bhd membekalkan aksesori komputer dan telefon, komponen dan upgrade, serta menyediakan servis pembaikan untuk laptop, PC, telefon dan tablet. Semuanya melalui WhatsApp: tanya, pesan, dan kami hantar ke alamat anda.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa js-wa" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="cta.wa">WhatsApp kami</span></a>
+        <a class="btn btn-line" href="#repair" data-i18n="hero.cta2">Lihat servis baiki</a>
+      </div>
+    </div>
+    <div class="infocard">
+      <h2 data-i18n="info.h2">Hubungi kami</h2>
+      <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><div><span class="lbl">WhatsApp</span><a class="val js-wa js-wanum" href="#contact"></a></div></div>
+      <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><div><span class="lbl" data-i18n="info.phone">Telefon</span><a class="val js-tel" href="#contact"></a></div></div>
+      <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><div><span class="lbl" data-i18n="c.email">E-mel</span><span class="val js-email"></span></div></div>
+      <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div><span class="lbl" data-i18n="info.hours">Waktu operasi</span><div class="hours js-hours"></div></div></div>
+      <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg><div><span class="lbl" data-i18n="info.area">Penghantaran</span><span class="val" data-i18n="info.areaVal">Perniagaan online. Barang dihantar ke alamat anda.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-i18n="prod.h2">Produk yang kami jual</h2>
+      <p data-i18n="prod.lead">Untuk rumah, pejabat dan gaming. Beritahu kami model peranti anda dan kami padankan komponen yang sesuai.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-keyboard"/></svg></span><h3 data-i18n="prod.1a">Aksesori komputer</h3><p data-i18n="prod.1b">Papan kekunci, tetikus, monitor, webcam, headset, speaker, beg laptop, kabel dan adapter.</p></div>
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-mobile"/></svg></span><h3 data-i18n="prod.2a">Aksesori telefon</h3><p data-i18n="prod.2b">Casing, tempered glass, pengecas, kabel, power bank, earbud dan pemegang telefon.</p></div>
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-chip"/></svg></span><h3 data-i18n="prod.3a">Komponen &amp; upgrade</h3><p data-i18n="prod.3b">SSD, RAM, hard disk, power supply, kad grafik, bateri dan pengecas laptop.</p></div>
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-wifi"/></svg></span><h3 data-i18n="prod.4a">Rangkaian</h3><p data-i18n="prod.4b">Router Wi-Fi, sistem mesh, switch, kabel LAN dan adapter USB.</p></div>
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-printer"/></svg></span><h3 data-i18n="prod.5a">Pencetak &amp; dakwat</h3><p data-i18n="prod.5b">Pencetak, dakwat dan toner, kertas, kabel dan pemasangan.</p></div>
+      <div class="card"><span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-drive"/></svg></span><h3 data-i18n="prod.6a">Storan &amp; sandaran</h3><p data-i18n="prod.6b">Pendrive, kad memori, hard disk luaran dan pembaca kad.</p></div>
+    </div>
+    <p class="note"><span data-i18n="prod.note1">Nak pesan atau cari barang yang tiada dalam senarai?</span> <a class="js-wa" href="#contact" data-msg="product" data-i18n="prod.note2">WhatsApp kami nama atau model barang</a> <span data-i18n="prod.note3">dan kami semak stok, beri harga dan hantar ke alamat anda.</span></p>
+  </div>
+</section>
+
+<section class="section alt" id="repair">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-i18n="rep.h2">Servis baiki dan penyelenggaraan</h2>
+      <p data-i18n="rep.lead">Hantar butiran peranti melalui WhatsApp. Kami periksa dahulu, kemudian beri sebut harga. Anda yang tentukan sebelum kami mula.</p>
+    </div>
+    <div class="two">
+      <div class="card">
+        <span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg></span>
+        <h3 data-i18n="svc.pc">Komputer &amp; laptop</h3>
+        <ul class="list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.1">Tak boleh hidup, tiada paparan, mati sendiri</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.2">Lembap atau hang: cuci, upgrade SSD / RAM, install semula Windows</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.3">Buang virus dan malware</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.4">Tukar skrin, papan kekunci, engsel dan bateri</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.5">Overheat: cuci dalaman, kipas dan thermal paste</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.6">Pemulihan data dan sandaran</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.7">Bina PC custom dan upgrade</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="pc.8">Pemasangan Windows, Office, pencetak, e-mel dan Wi-Fi</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="icbox"><svg class="ic" aria-hidden="true"><use href="#i-mobile"/></svg></span>
+        <h3 data-i18n="svc.ph">Telefon &amp; tablet</h3>
+        <ul class="list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.1">Tukar skrin dan LCD</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.2">Tukar bateri</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.3">Port pengecas dan masalah tak boleh cas</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.4">Speaker, mikrofon dan kamera</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.5">Semakan masuk air</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.6">Pindah data ke telefon baru</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ph.7">Masalah perisian: stuck pada logo, restart sendiri, storan penuh</span></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3 class="sub-h" data-i18n="proc.h3">Cara pembaikan berjalan</h3>
+      <ol class="steps">
+        <li><div><h3 data-i18n="proc.1a">Beritahu masalahnya</h3><p data-i18n="proc.1b">WhatsApp kami model peranti dan masalahnya. Gambar membantu.</p></div></li>
+        <li><div><h3 data-i18n="proc.2a">Hantar peranti</h3><p data-i18n="proc.2b">Kami beritahu cara paling mudah untuk hantar peranti kepada kami.</p></div></li>
+        <li><div><h3 data-i18n="proc.3a">Kami periksa &amp; sebut harga</h3><p data-i18n="proc.3b">Harga dan anggaran masa, sebelum sebarang kerja bermula.</p></div></li>
+        <li><div><h3 data-i18n="proc.4a">Kami baiki</h3><p data-i18n="proc.4b">Dibaiki dengan alat ganti berkualiti, dari stok kami jika ada.</p></div></li>
+        <li><div><h3 data-i18n="proc.5a">Uji dan hantar balik</h3><p data-i18n="proc.5b">Kami uji sepenuhnya, kemudian hantar balik ke alamat anda.</p></div></li>
+      </ol>
+    </div>
+    <p class="note"><span data-i18n="rep.biz">Untuk pejabat dan perniagaan: penyelenggaraan PC berkala, pemasangan rangkaian dan Wi-Fi, serta bekalan pukal aksesori dan barang guna habis.</span> <a class="js-wa" href="#contact" data-msg="business" data-i18n="rep.bizcta">Tanya di WhatsApp</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="shead"><h2 data-i18n="about.h2">Tentang kami</h2></div>
+    <div class="about">
+      <div class="about-text">
+        <p data-i18n="about.p1">AQ Computer One Stop Supply Sdn Bhd ialah syarikat berdaftar di Malaysia yang membekalkan aksesori komputer dan telefon, komponen dan upgrade, serta menyediakan servis pembaikan untuk laptop, PC, telefon dan tablet.</p>
+        <p data-i18n="about.p2">Kami beroperasi sepenuhnya secara online. Pelanggan menghubungi kami melalui WhatsApp untuk bertanya, mendapatkan sebut harga dan membuat pesanan; barang dan peranti yang siap dibaiki dihantar terus ke alamat pelanggan. Kami melayani pelanggan individu, pejabat dan perniagaan kecil.</p>
+        <p data-i18n="about.p3">Setiap pembaikan bermula dengan pemeriksaan dan sebut harga yang jelas. Tiada kerja dibuat tanpa persetujuan anda.</p>
+      </div>
+      <dl class="facts">
+        <div><dt data-i18n="facts.name">Nama syarikat</dt><dd>AQ Computer One Stop Supply Sdn Bhd</dd></div>
+        <div id="factReg" hidden><dt data-i18n="facts.reg">No. pendaftaran (SSM)</dt><dd class="js-reg"></dd></div>
+        <div><dt data-i18n="facts.type">Jenis perniagaan</dt><dd data-i18n="facts.typeVal">Jualan online &amp; servis pembaikan</dd></div>
+        <div><dt data-i18n="facts.area">Kawasan perkhidmatan</dt><dd data-i18n="facts.areaVal">Malaysia (penghantaran ke alamat anda)</dd></div>
+        <div><dt>WhatsApp</dt><dd><a class="js-wa js-wanum" href="#contact" style="color:var(--accent);text-decoration:none"></a></dd></div>
+        <div><dt data-i18n="c.email">E-mel</dt><dd class="js-email"></dd></div>
+      </dl>
+    </div>
+    <div class="why">
+      <div><b data-i18n="why.1a">Semuanya melalui WhatsApp</b><small data-i18n="why.1b">Tanya, pesan dan atur servis baiki tanpa perlu ke kedai.</small></div>
+      <div><b data-i18n="why.2a">Sebut harga dahulu</b><small data-i18n="why.2b">Harga dalam RM sebelum kerja bermula. Tiada caj tersembunyi.</small></div>
+      <div><b data-i18n="why.3a">Jualan dan baiki di satu tempat</b><small data-i18n="why.3b">Beli aksesori, komponen dan hantar baiki dengan pembekal yang sama.</small></div>
+      <div><b data-i18n="why.4a">Hantar ke alamat anda</b><small data-i18n="why.4b">Barang dan peranti yang siap dibaiki dihantar terus kepada anda.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-i18n="c.h2">Hubungi kami</h2>
+      <p data-i18n="c.lead">Kami perniagaan online. Untuk sebut harga, semak stok atau pesanan, WhatsApp adalah cara paling pantas.</p>
+    </div>
+    <div class="contact">
+      <div class="details">
+        <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><div><span class="lbl">WhatsApp</span><a class="val js-wa js-wanum" href="#contact"></a><button class="copy" type="button" data-copy="whatsapp" hidden><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="c.copy">Salin</span></button></div></div>
+        <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><div><span class="lbl" data-i18n="info.phone">Telefon</span><a class="val js-tel" href="#contact"></a><button class="copy" type="button" data-copy="phone" hidden><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="c.copy">Salin</span></button></div></div>
+        <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><div><span class="lbl" data-i18n="c.email">E-mel</span><span class="val js-email"></span><button class="copy" type="button" data-copy="email" hidden><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="c.copy">Salin</span></button></div></div>
+        <div class="info"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div><span class="lbl" data-i18n="info.hours">Waktu operasi</span><div class="hours js-hours"></div></div></div>
+        <div class="info" id="linksRow" hidden><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg><div><span class="lbl" data-i18n="c.links">Cari kami di</span><div class="links" id="links"></div></div></div>
+      </div>
+      <form class="form" id="quoteForm" novalidate>
+        <div><h3 data-i18n="q.h3">Minta sebut harga / tanya stok</h3><p class="lead" data-i18n="q.lead">Isi borang ini dan WhatsApp akan dibuka dengan butiran anda sedia untuk dihantar.</p></div>
+        <div class="frow">
+          <div class="field">
+            <label for="qDevice" data-i18n="q.device">Peranti / perkara</label>
+            <select id="qDevice" name="device">
+              <option data-i18n="opt.1">Laptop</option><option data-i18n="opt.2">PC desktop</option><option data-i18n="opt.3">Telefon</option><option data-i18n="opt.4">Tablet</option><option data-i18n="opt.5">Pencetak</option><option data-i18n="opt.6">Nak beli barang</option><option data-i18n="opt.7">Lain-lain</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="qModel" data-i18n="q.model">Jenama &amp; model</label>
+            <input id="qModel" name="model" type="text" autocomplete="off" placeholder="cth. Dell Inspiron 15, iPhone 13" data-i18n-ph="q.modelPh">
+          </div>
+        </div>
+        <div class="field">
+          <label for="qIssue" data-i18n="q.issue">Masalah atau barang yang dicari</label>
+          <textarea id="qIssue" name="issue" placeholder="cth. Tak boleh hidup, skrin retak, nak cari RAM 8GB" data-i18n-ph="q.issuePh"></textarea>
+        </div>
+        <div class="frow">
+          <div class="field">
+            <label for="qName" data-i18n="q.name">Nama anda</label>
+            <input id="qName" name="name" type="text" autocomplete="name" placeholder="cth. Ahmad" data-i18n-ph="q.namePh">
+          </div>
+          <div class="field">
+            <label for="qPhone" data-i18n="q.phone">Nombor telefon</label>
+            <input id="qPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="cth. 012-345 6789" data-i18n-ph="q.phonePh">
+          </div>
+        </div>
+        <div class="field">
+          <label for="qAddr" data-i18n="q.addr">Alamat penghantaran</label>
+          <input id="qAddr" name="address" type="text" autocomplete="street-address" placeholder="cth. No. 12, Jalan Melati 3, Taman Melawati, 53100 KL" data-i18n-ph="q.addrPh">
+        </div>
+        <a class="btn btn-wa" id="quoteSend" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="q.send">Hantar di WhatsApp</span></a>
+        <p class="fnote" data-i18n="q.note">Tiada apa yang dihantar sehingga anda tekan hantar dalam WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" aria-label="AQ Computer One Stop Supply"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>AQ Computer</b><span>One Stop Supply</span></span></a>
+      <strong>AQ Computer One Stop Supply Sdn Bhd</strong><span id="fReg"></span><br>
+      <span class="js-email"></span> · <span class="js-wanum"></span><br>
+      <span>© <span id="year">2026</span> AQ Computer One Stop Supply Sdn Bhd. <span data-i18n="f.rights">Hak cipta terpelihara.</span></span>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#products" data-i18n="nav.products">Produk</a>
+      <a href="#repair" data-i18n="nav.repair">Servis baiki</a>
+      <a href="#about" data-i18n="nav.about">Tentang kami</a>
+      <a href="#contact" data-i18n="nav.contact">Hubungi</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="fab js-wa" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  // ── Business details: edit these and republish ─────────────────────────
+  var BIZ = {
+    whatsapp: "60177565610",        // digits only, with country code
+    phone: "017-756 5610",          // as shown to customers
+    email: "aqcomputer18@gmail.com",
+    hours: {
+      ms: [["Isnin – Sabtu", "10:00 – 19:00"], ["Ahad & cuti umum", "Tutup"]],
+      en: [["Mon – Sat", "10:00 – 19:00"], ["Sun & public holidays", "Closed"]]
+    },
+    companyNo: "",                  // SSM registration, e.g. "202301012345 (1512345-X)"
+    links: {                        // leave empty to hide; e.g. facebook: "https://www.facebook.com/..."
+      facebook: "", instagram: "", tiktok: "", shopee: "", lazada: ""
+    }
+  };
+  // ──────────────────────────────────────────────────────────────────────
+
+  var EN = {
+    "nav.products": "Products", "nav.repair": "Repair", "nav.about": "About us", "nav.contact": "Contact", "cta.wa": "WhatsApp us",
+    "hero.h1": "Online computer & phone shop: accessories, parts and repair",
+    "hero.lead": "AQ Computer One Stop Supply Sdn Bhd supplies computer and phone accessories, parts and upgrades, and repairs laptops, PCs, phones and tablets. Everything is handled on WhatsApp: ask, order, and we deliver to your address.",
+    "hero.cta2": "See repair services",
+    "info.h2": "Contact us", "info.hours": "Opening hours", "info.phone": "Phone", "info.area": "Delivery", "info.areaVal": "Online business. Items are delivered to your address.",
+    "prod.h2": "What we sell", "prod.lead": "For home, office and gaming setups. Tell us the model and we'll match the right part.",
+    "prod.1a": "Computer accessories", "prod.1b": "Keyboards, mice, monitors, webcams, headsets, speakers, laptop bags, cables and adapters.",
+    "prod.2a": "Phone accessories", "prod.2b": "Cases, tempered glass, chargers, cables, power banks, earbuds and phone holders.",
+    "prod.3a": "Parts & upgrades", "prod.3b": "SSDs, RAM, hard drives, power supplies, graphics cards, laptop batteries and chargers.",
+    "prod.4a": "Networking", "prod.4b": "Wi-Fi routers, mesh systems, switches, LAN cables and USB adapters.",
+    "prod.5a": "Printers & ink", "prod.5b": "Printers, ink and toner, paper, cables and setup.",
+    "prod.6a": "Storage & backup", "prod.6b": "Pendrives, memory cards, external drives and card readers.",
+    "prod.note1": "Want to order, or looking for something not listed?", "prod.note2": "WhatsApp us the item name or model", "prod.note3": "and we'll check stock, quote a price and deliver to your address.",
+    "rep.h2": "Repair and maintenance", "rep.lead": "Send us the device details on WhatsApp. We check first, then give you a quote. You decide before we start.",
+    "svc.pc": "Computers & laptops",
+    "pc.1": "Won't power on, no display, random shutdowns", "pc.2": "Slow or freezing: clean-up, SSD / RAM upgrade, Windows reinstall",
+    "pc.3": "Virus and malware removal", "pc.4": "Screen, keyboard, hinge and battery replacement",
+    "pc.5": "Overheating: internal cleaning, fan and thermal paste", "pc.6": "Data recovery and backup",
+    "pc.7": "Custom PC builds and upgrades", "pc.8": "Windows, Office, printer, email and Wi-Fi setup",
+    "svc.ph": "Phones & tablets",
+    "ph.1": "Screen and LCD replacement", "ph.2": "Battery replacement", "ph.3": "Charging port and no-charge issues",
+    "ph.4": "Speaker, mic and camera", "ph.5": "Water damage check", "ph.6": "Data transfer to a new phone",
+    "ph.7": "Software issues: stuck on logo, restart loops, storage full",
+    "proc.h3": "How a repair works",
+    "proc.1a": "Tell us the problem", "proc.1b": "WhatsApp us the device model and the problem. Photos help.",
+    "proc.2a": "Send the device", "proc.2b": "We'll tell you the easiest way to get the device to us.",
+    "proc.3a": "We check & quote", "proc.3b": "Price and estimated time, before any work starts.",
+    "proc.4a": "We repair", "proc.4b": "Fixed with quality parts, from our own stock where possible.",
+    "proc.5a": "Test and send back", "proc.5b": "We test it fully, then send it back to your address.",
+    "rep.biz": "For offices and businesses: regular PC maintenance, network and Wi-Fi setup, and bulk supply of accessories and consumables.", "rep.bizcta": "Ask on WhatsApp",
+    "about.h2": "About us",
+    "about.p1": "AQ Computer One Stop Supply Sdn Bhd is a Malaysian registered company supplying computer and phone accessories, parts and upgrades, and repairing laptops, PCs, phones and tablets.",
+    "about.p2": "We operate fully online. Customers reach us on WhatsApp to ask questions, get a quote and place orders; items and repaired devices are delivered straight to the customer's address. We serve individuals, offices and small businesses.",
+    "about.p3": "Every repair starts with an inspection and a clear quote. No work is done without your approval.",
+    "facts.name": "Company name", "facts.reg": "Registration no. (SSM)", "facts.type": "Business type", "facts.typeVal": "Online sales & repair service",
+    "facts.area": "Service area", "facts.areaVal": "Malaysia (delivery to your address)",
+    "why.1a": "Everything on WhatsApp", "why.1b": "Ask, order and arrange repairs without visiting a shop.",
+    "why.2a": "Quote first", "why.2b": "Price in RM before any work starts. No hidden charges.",
+    "why.3a": "Sales and repair in one place", "why.3b": "Buy accessories and parts, and send in repairs, with the same supplier.",
+    "why.4a": "Delivered to your address", "why.4b": "Items and repaired devices are sent straight to you.",
+    "c.h2": "Contact us", "c.lead": "We are an online business. For a quote, stock check or order, WhatsApp is the fastest way to reach us.",
+    "c.copy": "Copy", "c.email": "Email", "c.links": "Find us on",
+    "q.h3": "Request a quote / check stock", "q.lead": "Fill this in and WhatsApp opens with your details ready to send.",
+    "q.device": "Device / topic", "opt.1": "Laptop", "opt.2": "Desktop PC", "opt.3": "Phone", "opt.4": "Tablet", "opt.5": "Printer", "opt.6": "Buying an item", "opt.7": "Other",
+    "q.model": "Brand & model", "q.modelPh": "e.g. Dell Inspiron 15, iPhone 13",
+    "q.issue": "Problem or item you're looking for", "q.issuePh": "e.g. Won't turn on, cracked screen, looking for 8GB RAM",
+    "q.name": "Your name", "q.namePh": "e.g. Ahmad",
+    "q.phone": "Phone number", "q.phonePh": "e.g. 012-345 6789",
+    "q.addr": "Delivery address", "q.addrPh": "e.g. No. 12, Jalan Melati 3, Taman Melawati, 53100 KL",
+    "q.send": "Send on WhatsApp", "q.note": "Nothing is sent until you tap send inside WhatsApp.",
+    "f.rights": "All rights reserved."
+  };
+  var MSG = {
+    ms: { greeting: "Hi AQ Computer, ", general: "saya nak tanya tentang produk dan servis pembaikan.", product: "saya nak pesan / cari barang ini: ",
+          business: "saya nak tanya tentang harga pukal / sokongan IT untuk perniagaan saya.",
+          quote: "saya nak tanya:", device: "Peranti / perkara", model: "Jenama / model", issue: "Butiran", name: "Nama", phone: "Telefon", addr: "Alamat",
+          companyNo: "No. Syarikat", copied: "Disalin", selected: "Dipilih. Tekan salin." },
+    en: { greeting: "Hi AQ Computer, ", general: "I'd like to ask about your products and repair services.", product: "I'd like to order / find this item: ",
+          business: "I'd like to ask about bulk pricing / IT support for my business.",
+          quote: "I have an enquiry:", device: "Device / topic", model: "Brand / model", issue: "Details", name: "Name", phone: "Phone", addr: "Address",
+          companyNo: "Company No.", copied: "Copied", selected: "Selected. Press copy." }
+  };
+  var LINK_NAMES = { facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", shopee: "Shopee", lazada: "Lazada" };
+
+  var lang = "ms";
+  var waReady = /^\d{9,15}$/.test(BIZ.whatsapp);
+  function $(id) { return document.getElementById(id); }
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+  function t(key) { return MSG[lang][key]; }
+  function waUrl(msg) { return "https://wa.me/" + BIZ.whatsapp + "?text=" + encodeURIComponent(msg); }
+  function pointAt(a, url) { if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; } else { a.href = "#contact"; a.removeAttribute("target"); a.removeAttribute("rel"); } }
+
+  var MS = {}, MSPH = {};
+  var nodes = all("[data-i18n]"), phNodes = all("[data-i18n-ph]");
+  nodes.forEach(function (e) { MS[e.getAttribute("data-i18n")] = e.textContent; });
+  phNodes.forEach(function (e) { MSPH[e.getAttribute("data-i18n-ph")] = e.getAttribute("placeholder"); });
+
+  // Mobile menu
+  var menuBtn = $("menuBtn"), mnav = $("mnav");
+  menuBtn.addEventListener("click", function () { var openNow = mnav.hidden; mnav.hidden = !openNow; menuBtn.setAttribute("aria-expanded", openNow ? "true" : "false"); });
+  all("#mnav a").forEach(function (a) { a.addEventListener("click", function () { mnav.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }); });
+
+  // Toast + copy
+  var toastEl = $("toast"), toastTimer;
+  function toast(msg) { toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(function () { toastEl.hidden = true; }, 1600); }
+  function copyText(value, selEl) {
+    function done() { toast(t("copied")); }
+    function fallback() { try { var r = document.createRange(); r.selectNodeContents(selEl); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); toast(t("selected")); } catch (e) {} }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(value).then(done, fallback); else fallback();
+  }
+
+  // Contact details
+  var waDisplay = BIZ.whatsapp ? "+" + BIZ.whatsapp.replace(/^(\d\d)(\d\d)(\d{3})(\d{4})$/, "$1 $2-$3 $4") : "";
+  function renderContact() {
+    all(".js-wanum").forEach(function (e) { e.textContent = waDisplay; });
+    all(".js-email").forEach(function (e) { e.textContent = BIZ.email; });
+    all(".js-tel").forEach(function (a) { a.textContent = BIZ.phone; a.href = BIZ.phone ? "tel:" + BIZ.phone.replace(/[^\d+]/g, "") : "#contact"; });
+    all(".js-hours").forEach(function (h) { h.textContent = ""; BIZ.hours[lang].forEach(function (x) { var r = document.createElement("div"); var d = document.createElement("span"); d.textContent = x[0]; var v = document.createElement("span"); v.textContent = x[1]; r.appendChild(d); r.appendChild(v); h.appendChild(r); }); });
+    var reg = $("fReg"); if (BIZ.companyNo) { reg.textContent = " · " + t("companyNo") + " " + BIZ.companyNo; } else { reg.textContent = ""; }
+    var fr = $("factReg"); if (BIZ.companyNo) { fr.hidden = false; all(".js-reg").forEach(function (e) { e.textContent = BIZ.companyNo; }); } else { fr.hidden = true; }
+  }
+  var copyValues = { whatsapp: BIZ.whatsapp ? "+" + BIZ.whatsapp : "", phone: BIZ.phone, email: BIZ.email };
+  all(".copy").forEach(function (btn) {
+    var value = copyValues[btn.getAttribute("data-copy")]; if (!value) return; btn.hidden = false;
+    btn.addEventListener("click", function () { copyText(value, btn.parentNode.querySelector(".val")); });
+  });
+  function renderWaLinks() { all(".js-wa").forEach(function (a) { var kind = a.getAttribute("data-msg") || "general"; pointAt(a, waReady ? waUrl(t("greeting") + t(kind)) : ""); }); }
+
+  // Platform links (only the ones filled in)
+  (function () {
+    var box = $("links"), any = false;
+    Object.keys(LINK_NAMES).forEach(function (k) {
+      var url = (BIZ.links[k] || "").trim(); if (!/^https?:\/\//.test(url)) return;
+      var a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = LINK_NAMES[k]; box.appendChild(a); any = true;
+    });
+    $("linksRow").hidden = !any;
+  })();
+
+  // Enquiry form → WhatsApp
+  var form = $("quoteForm"), send = $("quoteSend"), fields = ["qDevice", "qModel", "qIssue", "qName", "qPhone", "qAddr"].map($);
+  function buildQuote() {
+    var sel = fields[0], dev = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].textContent : "";
+    var v = fields.map(function (f) { return (f.value || "").trim(); });
+    var lines = [t("greeting") + t("quote"), t("device") + ": " + (dev || "-"), t("model") + ": " + (v[1] || "-"), t("issue") + ": " + (v[2] || "-"), t("name") + ": " + (v[3] || "-"), t("phone") + ": " + (v[4] || "-")];
+    if (v[5]) lines.push(t("addr") + ": " + v[5]);
+    return lines.join("\n");
+  }
+  function updateQuote() { pointAt(send, waReady ? waUrl(buildQuote()) : ""); }
+  fields.forEach(function (f) { f.addEventListener("input", updateQuote); f.addEventListener("change", updateQuote); });
+  form.addEventListener("submit", function (e) { e.preventDefault(); updateQuote(); if (waReady) send.click(); });
+
+  $("year").textContent = new Date().getFullYear();
+
+  // Language
+  function applyLang(next) {
+    lang = next === "en" ? "en" : "ms";
+    nodes.forEach(function (e) { var k = e.getAttribute("data-i18n"), s = lang === "en" ? EN[k] : MS[k]; if (s != null) e.textContent = s; });
+    phNodes.forEach(function (e) { var k = e.getAttribute("data-i18n-ph"), s = lang === "en" ? EN[k] : MSPH[k]; if (s != null) e.setAttribute("placeholder", s); });
+    all(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false"); });
+    document.documentElement.lang = lang;
+    renderContact(); renderWaLinks(); updateQuote();
+    try { localStorage.setItem("aq-lang", lang); } catch (e) {}
+  }
+  all(".lang button").forEach(function (b) { b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); }); });
+  var saved = "ms"; try { saved = localStorage.getItem("aq-lang") || "ms"; } catch (e) {}
+  applyLang(saved);
+})();
+</script>
+
+</body>
+</html>
